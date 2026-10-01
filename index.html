@@ -1,0 +1,296 @@
+<!doctype html><html lang="sk"><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<title>Ni-Ka Hair · kaderníctvo a coloristika v Trenčíne — neoficiálny návrh</title>
+<meta name="description" content="Neoficiálny návrh webu pre kaderníctvo Ni-Ka Hair v Trenčíne: melírovanie, balayage, farbenie, strihy a predlžovanie vlasov.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;800&family=Great+Vibes&display=swap" rel="stylesheet">
+<style>
+:root{
+  --plaster:#F4ECEC; --mauve:#BF9097; --mauve-d:#A7767E; --ink:#2A1A20; --ink-2:#5B4650;
+  --berry:#8E2452; --night:#24161C;
+  --line:rgba(42,26,32,.16);
+  --foil:linear-gradient(112deg,#f7f8f9 0%,#c4c9d0 16%,#eef0f2 29%,#9fa6af 44%,#e9ebee 57%,#b4bac2 73%,#f5f6f7 88%,#c9cdd3 100%);
+  --crinkle:repeating-linear-gradient(90deg,transparent 0 17px,rgba(0,0,0,.06) 17px 18px,rgba(255,255,255,.55) 18px 19px,transparent 19px 41px,rgba(0,0,0,.04) 41px 42px);
+  --s-plat:#E9DFCB; --s-honey:#C48D58; --s-copper:#A9532E; --s-choc:#4B2E25; --s-rose:#D79CA8;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--plaster);color:var(--ink);font:400 17px/1.6 Archivo,system-ui,sans-serif}
+img{max-width:100%;height:auto;display:block}
+a{color:inherit}
+a:focus-visible,summary:focus-visible{outline:3px solid var(--berry);outline-offset:3px}
+.wrap{max-width:1180px;margin:0 auto;padding:0 clamp(16px,4vw,48px)}
+.cap{font:600 12px/1.3 Archivo,sans-serif;letter-spacing:.16em;text-transform:uppercase}
+.script{font-family:"Great Vibes",cursive;font-weight:400;letter-spacing:0}
+.num{font-variant-numeric:tabular-nums}
+
+.notice{background:var(--night);color:#F4ECEC;font-size:13px;line-height:1.45;padding:9px 16px;text-align:center}
+
+header{border-bottom:1px solid var(--line)}
+.hd{display:flex;align-items:center;gap:28px;min-height:76px}
+.brand{text-decoration:none;display:flex;align-items:baseline;gap:12px;white-space:nowrap}
+.brand .script{font-size:38px;line-height:1}
+.brand .cap{color:var(--ink-2)}
+nav{margin-left:auto;display:flex;gap:26px}
+nav a,.tel{text-decoration:none;font-weight:500;font-size:15px;background:linear-gradient(currentColor,currentColor) 0 100%/0 1px no-repeat;transition:background-size .2s}
+nav a:hover,.tel:hover{background-size:100% 1px}
+.tel{font-variant-numeric:tabular-nums}
+.btn{white-space:nowrap;display:inline-flex;align-items:center;justify-content:center;min-height:46px;padding:0 22px;border-radius:2px;font:600 15px/1 Archivo,sans-serif;text-decoration:none;border:1px solid var(--ink);transition:background-color .2s,color .2s}
+.btn.solid{background:var(--berry);border-color:var(--berry);color:#fff}
+.btn.solid:hover{background:#741b42}
+.btn.ghost:hover{background:var(--ink);color:var(--plaster)}
+
+/* HERO */
+.hero{background:var(--mauve);position:relative;overflow:hidden}
+.hero .wrap{display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:center;min-height:min(600px,82vh);padding-top:56px;padding-bottom:64px}
+.hero h1{margin:0}
+.hero h1 .script{display:block;white-space:nowrap;font-size:clamp(60px,8.4vw,108px);line-height:.95;color:#fff;text-shadow:0 1px 0 rgba(42,26,32,.15)}
+.hero h1 .sub{display:block;margin-top:14px;font:800 clamp(24px,2.6vw,34px)/1.12 Archivo,sans-serif;letter-spacing:-.01em;max-width:18ch}
+.hero .lead{margin:22px 0 0;max-width:46ch;color:#2A1A20}
+.hero .lead q{font-style:normal}
+.hero .acts{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+.hero .btn.ghost{border-color:rgba(42,26,32,.7)}
+.facts{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));max-width:540px;gap:0;margin:34px 0 0;padding:0;list-style:none;border-top:1px solid rgba(42,26,32,.25)}
+.facts li{padding:14px 26px 0 0;margin-right:26px;border-right:1px solid rgba(42,26,32,.25)}
+.facts li:last-child{border:0;margin:0}
+.facts b{display:block;font:800 26px/1.1 Archivo,sans-serif;font-variant-numeric:tabular-nums}
+.facts span{display:block;margin-top:4px;font-size:13px;line-height:1.35;color:#3d2a32}
+
+/* foil packet around the photo */
+.packet{position:relative;justify-self:end;width:min(430px,100%);padding:26px 26px 64px;background:var(--crinkle),var(--foil);box-shadow:0 1px 0 rgba(255,255,255,.6) inset,0 18px 40px -22px rgba(42,26,32,.55);transform:rotate(1.2deg)}
+.packet::before{content:"";position:absolute;left:0;right:0;top:0;height:26px;background:linear-gradient(180deg,rgba(0,0,0,.10),rgba(255,255,255,.35) 60%,rgba(0,0,0,.08));}
+.packet img{width:100%;aspect-ratio:3/4;object-fit:cover;position:relative}
+.packet::after{content:"";position:absolute;left:0;right:0;bottom:0;height:46px;background:linear-gradient(180deg,rgba(0,0,0,.16),rgba(255,255,255,.5) 18%,rgba(0,0,0,.04) 60%,rgba(255,255,255,.3));clip-path:polygon(0 0,100% 0,100% 100%,6% 100%)}
+.packet .tag{position:absolute;right:26px;bottom:13px;z-index:1;font-size:12px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:#4a4f57}
+
+/* foil divider = the one ornament */
+.fold{height:34px;background:var(--crinkle),var(--foil);clip-path:polygon(0 30%,3% 0,97% 0,100% 30%,100% 70%,97% 100%,3% 100%,0 70%);margin:0 auto;max-width:520px}
+
+section{padding:88px 0}
+h2{font:800 clamp(30px,3.4vw,44px)/1.08 Archivo,sans-serif;letter-spacing:-.015em;margin:0}
+h2 .script{font-size:1.3em;font-weight:400;color:var(--berry);margin-right:.08em}
+.kicker{color:var(--ink-2);margin-bottom:14px}
+
+/* SERVICES — money block */
+.svc{background:var(--night);color:#F4ECEC}
+.svc .wrap{display:grid;grid-template-columns:.8fr 1.2fr;gap:64px;align-items:start}
+.svc .kicker{color:#C9AEB5}
+.svc h2 .script{color:#E7A9BA}
+.svc p{color:#D9C8CD;max-width:40ch}
+.svc .src{font-size:14px;color:#B9A3AA;border-top:1px solid rgba(244,236,236,.18);padding-top:14px;margin-top:22px}
+.svc .src q{font-style:normal;color:#F4ECEC}
+.foils{list-style:none;margin:0;padding:0;display:grid;gap:14px}
+.foils li{display:grid;grid-template-columns:44px 1fr;align-items:stretch;min-height:58px}
+.foils .st{clip-path:polygon(0 0,100% 12%,100% 88%,0 100%);}
+.foils .bd{position:relative;display:flex;align-items:center;justify-content:space-between;gap:16px;padding:0 22px;background:var(--crinkle),var(--foil);color:var(--ink);clip-path:polygon(0 0,98% 0,100% 50%,98% 100%,0 100%)}
+.foils .bd strong{font:600 19px/1.2 Archivo,sans-serif}
+.foils .bd small{font-size:13px;color:#4a4f57;text-align:right}
+.foils li:nth-child(1){margin-right:18%}
+.foils li:nth-child(2){margin-right:6%}
+.foils li:nth-child(3){margin-right:24%}
+.foils li:nth-child(4){margin-right:10%}
+.foils li:nth-child(5){margin-right:0}
+.foils li:nth-child(6){margin-right:14%}
+.foils li:nth-child(7){margin-right:30%}
+.foils li:nth-child(8){margin-right:4%}
+.demo-note{margin-top:22px;font-size:14px;color:#C9B6BC;border:1px dashed rgba(244,236,236,.32);padding:12px 16px}
+
+/* RESULTS */
+.res-head{display:flex;justify-content:space-between;align-items:end;gap:24px;margin-bottom:40px}
+.res-head p{margin:0;max-width:44ch;color:var(--ink-2)}
+.grid5{display:grid;grid-template-columns:repeat(5,1fr);gap:22px;align-items:start;margin:0;padding:0;list-style:none}
+.grid5 li:nth-child(even){margin-top:42px}
+.mini{position:relative;padding:12px 12px 40px;background:var(--crinkle),var(--foil);box-shadow:0 12px 26px -20px rgba(42,26,32,.6)}
+.mini img{width:100%;aspect-ratio:1;object-fit:cover;transition:transform .5s}
+.mini .ph{overflow:hidden}
+.mini:hover img{transform:scale(1.045)}
+.mini figcaption{position:absolute;left:12px;right:12px;bottom:11px;display:flex;align-items:center;gap:8px;font-size:13px;font-weight:500;color:#33383f}
+.mini figcaption i{flex:none;width:22px;height:8px}
+.photo-src{margin-top:28px;font-size:13px;color:var(--ink-2)}
+
+/* RATING */
+.rate{padding:0 0 88px}
+.rate .wrap{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.rate .it{padding:30px 28px 30px 0}
+.rate .it+.it{padding-left:28px;border-left:1px solid var(--line)}
+.rate b{display:block;font:800 46px/1 Archivo,sans-serif;font-variant-numeric:tabular-nums;color:var(--berry)}
+.rate span{display:block;margin-top:8px;font-size:15px}
+.rate small{display:block;margin-top:4px;color:var(--ink-2);font-size:13px}
+.quote{max-width:780px;margin:56px auto 0;padding:0 clamp(16px,4vw,48px);font-size:21px;line-height:1.5}
+.quote q{font-style:normal}
+.quote cite{display:block;margin-top:10px;font:500 13px/1.4 Archivo,sans-serif;font-style:normal;color:var(--ink-2)}
+
+/* CONTACT */
+.contact{background:#EADDDD;padding:88px 0}
+.contact .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:56px}
+dl{margin:28px 0 0;display:grid;grid-template-columns:140px 1fr;border-top:1px solid var(--line)}
+dt,dd{margin:0;padding:15px 0;border-bottom:1px solid var(--line)}
+dt{color:var(--ink-2)}
+dd a{text-decoration:none;background:linear-gradient(currentColor,currentColor) 0 100%/0 1px no-repeat;transition:background-size .2s}
+dd a:hover{background-size:100% 1px}
+.hours{display:grid;grid-template-columns:auto auto;gap:2px 18px;justify-content:start;font-variant-numeric:tabular-nums}
+.verify{display:inline-block;margin-top:6px;font-size:13px;color:var(--berry);font-weight:600}
+.card{align-self:start;padding:34px 32px 36px;background:var(--crinkle),var(--foil);position:relative}
+.card .script{font-size:52px;line-height:1;color:var(--berry)}
+.card p{margin:12px 0 22px;color:#30353c}
+.card .acts{display:grid;gap:10px}
+.card .btn.ghost{background:rgba(255,255,255,.55)}
+
+footer{background:var(--night);color:#CDBAC0;font-size:14px;padding:30px 0 34px}
+footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+footer .script{font-size:30px;color:#F4ECEC}
+
+.mbar{display:none}
+@media (max-width:900px){
+  nav{display:none}
+  .hd .tel{display:none}
+  .hd .btn{margin-left:auto}
+  .hero .wrap{grid-template-columns:1fr;gap:44px;padding-top:40px;padding-bottom:56px;min-height:0}
+  .packet{justify-self:center;transform:none;width:min(400px,100%)}
+  .svc .wrap,.contact .wrap{grid-template-columns:1fr;gap:36px}
+  .foils li{margin-right:0!important}
+  .grid5{grid-template-columns:repeat(2,1fr);gap:16px}
+  .grid5 li:nth-child(even){margin-top:0}
+  .grid5 li:first-child{grid-column:1/-1;justify-self:center;width:min(340px,100%)}
+  .res-head{display:block}
+  .res-head p{margin-top:14px}
+  .rate .wrap{grid-template-columns:1fr}
+  .rate .it,.rate .it+.it{padding:24px 0;border-left:0}
+  .rate .it+.it{border-top:1px solid var(--line)}
+  section{padding:64px 0}
+  .mbar{display:grid;grid-template-columns:1fr 1fr;gap:8px;position:fixed;left:0;right:0;bottom:0;z-index:20;padding:8px 12px calc(8px + env(safe-area-inset-bottom));background:rgba(36,22,28,.97)}
+  .mbar a{min-height:48px;display:flex;align-items:center;justify-content:center;font-weight:600;text-decoration:none;border-radius:2px}
+  .mbar a:first-child{background:var(--berry);color:#fff}
+  .mbar a:last-child{border:1px solid rgba(244,236,236,.5);color:#F4ECEC}
+  body{padding-bottom:calc(66px + env(safe-area-inset-bottom))}
+}
+@media (max-width:520px){
+  .brand .cap{display:none}
+  .brand .script{font-size:32px}
+  .hd .btn{padding:0 16px}
+  .facts span{font-size:12px;display:block;line-height:1.35}
+  .facts li{padding-right:16px;margin-right:16px}
+  .facts b{font-size:22px}
+  dl{grid-template-columns:1fr}
+  dt{padding-bottom:0;border:0}
+  .foils .bd small{display:none}
+  .card{padding:28px 22px 30px}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+
+<div class="notice" role="note">Neoficiálny návrh — nie je to oficiálny web podniku · ukážka od webdavid.sk, objednávky ani rezervácie tu nefungujú</div>
+
+<header>
+  <div class="wrap hd">
+    <a class="brand" href="#top" aria-label="Ni-Ka Hair — úvod"><span class="script">Ni-Ka Hair</span><span class="cap">Trenčín</span></a>
+    <nav aria-label="Hlavná navigácia"><a href="#sluzby">Služby</a><a href="#vysledky">Výsledky</a><a href="#kontakt">Kontakt</a></nav>
+    <a class="tel" href="tel:+421911491001">0911 491 001</a>
+    <a class="btn solid" href="tel:+421911491001">Objednať sa</a>
+  </div>
+</header>
+
+<main id="top">
+<section class="hero" style="padding:0">
+  <div class="wrap">
+    <div>
+      <p class="cap" style="margin:0 0 18px">Kaderníctvo · Jozefa Braneckého, Trenčín</p>
+      <h1><span class="script">Ni-Ka Hair</span><span class="sub">Melír, balayage a farbenie v centre Trenčína</span></h1>
+      <p class="lead">Coloristika, dámske aj pánske strihy, účesy a predlžovanie vlasov. Objednávky podľa salónu: <q>dm alebo na tel.č</q></p>
+      <div class="acts">
+        <a class="btn solid" href="tel:+421911491001">Zavolať 0911 491 001</a>
+        <a class="btn ghost" href="https://www.facebook.com/kadernictvonikahair/" rel="noopener">Napísať na Facebooku</a>
+      </div>
+      <ul class="facts">
+        <li><b>10,0</b><span>Orly Kaderníctva · 85 hodnotení</span></li>
+        <li><b>II.</b><span>rebríček Orly Trenčín 2026</span></li>
+        <li><b>100 %</b><span>odporúča na FB · 64 recenzií</span></li>
+      </ul>
+    </div>
+    <figure class="packet" style="margin:0">
+      <img src="assets/salon-zrkadlo-kvety.webp" width="900" height="1200" fetchpriority="high" alt="Interiér salónu Ni-Ka Hair: zrkadlo v ráme z ružových a bielych kvetov, nad ním svietiaci nápis NIKA HAIR a biely pult s kreslami">
+      <figcaption class="tag">Salón · Trenčín</figcaption>
+          </figure>
+  </div>
+</section>
+
+<section class="svc" id="sluzby">
+  <div class="wrap">
+    <div>
+      <p class="cap kicker">Čo robíme</p>
+      <h2><span class="script">Farba</span> je doma</h2>
+      <p style="margin-top:18px">Ponuka podľa úvodu Facebookovej stránky salónu — od jemného melíru po kompletné odfarbenie, plus strihy a účesy.</p>
+      <p class="src">Doslova zo stránky salónu: <q>Melírovanie/balayage/odfarbenie/farbenie/coloristika/účesy/strihy pánske/dámske/ predlžovanie vlasov</q></p>
+      <p class="demo-note">Ukážka návrhu: cenník a trvanie služieb doplní salón — zatiaľ nie sú nikde zverejnené.</p>
+    </div>
+    <ul class="foils">
+      <li><span class="st" style="background:linear-gradient(90deg,var(--s-choc),var(--s-plat))"></span><span class="bd"><strong>Melírovanie</strong><small></small></span></li>
+      <li><span class="st" style="background:linear-gradient(90deg,var(--s-choc),var(--s-honey) 70%,var(--s-plat))"></span><span class="bd"><strong>Balayage</strong><small></small></span></li>
+      <li><span class="st" style="background:linear-gradient(90deg,#8a6a4f,#f3ead8)"></span><span class="bd"><strong>Odfarbenie</strong><small></small></span></li>
+      <li><span class="st" style="background:linear-gradient(90deg,var(--s-choc),var(--s-copper))"></span><span class="bd"><strong>Farbenie</strong><small></small></span></li>
+      <li><span class="st" style="background:linear-gradient(90deg,var(--s-rose),var(--s-plat),var(--s-honey))"></span><span class="bd"><strong>Coloristika</strong><small></small></span></li>
+      <li><span class="st" style="background:linear-gradient(90deg,#3a2a24,var(--s-honey))"></span><span class="bd"><strong>Účesy</strong><small>aj spoločenské</small></span></li>
+      <li><span class="st" style="background:linear-gradient(90deg,#1f1a18,#6d5446)"></span><span class="bd"><strong>Strihy dámske a pánske</strong><small></small></span></li>
+      <li><span class="st" style="background:linear-gradient(90deg,var(--s-choc),var(--s-honey),var(--s-plat))"></span><span class="bd"><strong>Predlžovanie vlasov</strong><small></small></span></li>
+    </ul>
+  </div>
+</section>
+
+<section id="vysledky">
+  <div class="wrap">
+    <div class="res-head">
+      <div><p class="cap kicker">Výsledky</p><h2><span class="script">Odtiene</span> z kresla</h2></div>
+      <p>Vlasy zozadu, tak ako ich salón zverejňuje na Facebooku. Popisy pod fotkami sú len odtiene, ktoré na fotke vidno.</p>
+    </div>
+    <ul class="grid5">
+      <li><figure class="mini" style="margin:0"><div class="ph"><img src="assets/vysledok-ladova-blond.webp" width="315" height="315" loading="lazy" alt="Dlhé rovné vlasy v ľadovej striebristej blond, pohľad zozadu"></div><figcaption><i style="background:linear-gradient(90deg,#c9cdd6,#f1f2f6)"></i>ľadová blond</figcaption></figure></li>
+      <li><figure class="mini" style="margin:0"><div class="ph"><img src="assets/vysledok-platinovy-bob.webp" width="315" height="315" loading="lazy" alt="Rovný platinový bob po plecia, pohľad zozadu"></div><figcaption><i style="background:linear-gradient(90deg,#cbbfae,#ece4d6)"></i>platinový bob</figcaption></figure></li>
+      <li><figure class="mini" style="margin:0"><div class="ph"><img src="assets/vysledok-orieskovy-bob.webp" width="315" height="315" loading="lazy" alt="Lesklý orieškovo hnedý bob, pohľad zozadu"></div><figcaption><i style="background:linear-gradient(90deg,#6b4429,#b07f52)"></i>oriešková hnedá</figcaption></figure></li>
+      <li><figure class="mini" style="margin:0"><div class="ph"><img src="assets/vysledok-cokoladova-dlzka.webp" width="315" height="315" loading="lazy" alt="Dlhé rovné vlasy v čokoládovom odtieni, pohľad zozadu"></div><figcaption><i style="background:linear-gradient(90deg,#3d2419,#7a4a32)"></i>čokoládová dĺžka</figcaption></figure></li>
+      <li><figure class="mini" style="margin:0"><div class="ph"><img src="assets/vysledok-bezova-blond-vlny.webp" width="315" height="315" loading="lazy" alt="Béžová blond s tmavším korienkom a vlnami, pohľad zozadu"></div><figcaption><i style="background:linear-gradient(90deg,#8d6c4f,#dcc6a6)"></i>béžová blond, vlny</figcaption></figure></li>
+    </ul>
+    <p class="photo-src">Fotky: Facebook stránka Ni-Ka Hair.</p>
+  </div>
+</section>
+
+<div class="rate">
+  <div class="wrap">
+    <div class="it"><b class="num">10,0</b><span>Orly Kaderníctva</span><small>85 hodnotení · stav 1. 10. 2026</small></div>
+    <div class="it"><b>II. miesto</b><span>rebríček Orly v Trenčíne 2026</span><small>orlykadernictva.eu · 1. 10. 2026</small></div>
+    <div class="it"><b class="num">100 %</b><span>odporúča na Facebooku</span><small>64 recenzií · 1. 10. 2026</small></div>
+  </div>
+  <div class="fold" style="margin-top:56px" aria-hidden="true"></div>
+  <blockquote class="quote" style="margin-bottom:0"><q>V centre Trenčína sídli kadernícky salón Ni-Ka Hair, ktorý sa vyznačuje individuálnym prístupom…</q><cite>Popis salónu na portáli Orly Kaderníctva</cite></blockquote>
+</div>
+
+<section class="contact" id="kontakt">
+  <div class="wrap">
+    <div>
+      <p class="cap kicker">Kontakt</p>
+      <h2>Kde nás nájdete</h2>
+      <dl>
+        <dt>Adresa</dt><dd>Jozefa Braneckého 162/14<br>911 01 Trenčín<br><a href="https://www.google.com/maps/search/Ni-Ka+Hair+Trenčín" rel="noopener">Otvoriť v Mapách Google →</a></dd>
+        <dt>Telefón</dt><dd><a class="num" href="tel:+421911491001">0911 491 001</a></dd>
+        <dt>E-mail</dt><dd><a href="mailto:nikahair03@gmail.com">nikahair03@gmail.com</a></dd>
+        <dt>Hodiny</dt><dd><span class="hours"><span>Po – Pi</span><span>9:00 – 19:00</span><span>So</span><span>9:00 – 12:00</span></span><span class="verify">podľa verejných údajov, overiť</span></dd>
+      </dl>
+    </div>
+    <aside class="card" aria-label="Objednávky">
+      <span class="script">Objednávky</span>
+      <p>Termín si dohodnete telefonicky alebo správou na Facebooku — salón píše: <q>Objednávky dm alebo na tel.č</q></p>
+      <div class="acts">
+        <a class="btn solid" href="tel:+421911491001">Zavolať 0911 491 001</a>
+        <a class="btn ghost" href="https://www.facebook.com/kadernictvonikahair/" rel="noopener">Správa na Facebooku</a>
+      </div>
+    </aside>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap"><span class="script">Ni-Ka Hair</span><span>Neoficiálny návrh webu · webdavid.sk · 2026</span></div>
+</footer>
+
+<div class="mbar"><a href="tel:+421911491001">Zavolať</a><a href="https://www.facebook.com/kadernictvonikahair/" rel="noopener">Facebook</a></div>
+</html>
